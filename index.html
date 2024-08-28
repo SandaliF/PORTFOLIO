@@ -1,38 +1,64 @@
-<DOCTYPE html>
-    <html lang='en'>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-widtth,initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-        <title> Sandali Fernando</title>
-        
-    </head>
-    <body>
-        <nav>
-            <div class="nav-container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Sandali Portfolio</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
                 Sandali <span>Fernando</span>
             </div>
-            
             <div class="links">
-                <div class="link"><a href="#" >Home</a></div>
-                <div class="link"><a href="#" >About</a></div>
-                <div class="link"><a href="#" >Skills</a></div>
-                <div class="link"><a href="#" >Contact</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#">Contact</a></div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Skills</a>
+                <a href="#">Projects</a>
+                <a href="#">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
             </div>
-
-            <i class="fa-solid fa-bars"></i>
-            <div class="dropdown">
-                <div class="links">
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Skills</a>
-                    <a href="#">Contact</a>
-                    <i class="fa-solid fa-xmark "></i>
+        </div>
+    </nav>
+    <section>
+        <div class="main-container">
+            <div class="image" data-aos="zoom-out" data-aos-duration="3000">
+                <img src="Sandali.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey I'm <span>Sandali</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">I'm a <span class="typewriter-text"></span><label for="">|</label></div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100"> I am a passionate third-year undergraduate student in the Department of Computer Science and Engineering at the University of Moratuwa. I’m passionate about technology and enjoy tackling challenging problems. Explore my portfolio to see my projects and feel free to reach out for collaborations!</p>
+                <div class="social-links">
+                    <a href="https://github.com/SandaliF" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100081085211123&mibextid=ZbWKwL" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/sandali-malshika-fernando/" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:sandalif.21@cse.mrt.ac.lk" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+                <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
+                    <button>Hire me</button>
                 </div>
             </div>
-
-        </nav>
-
-    </body>
-
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+    <script src="script.js"></script>
+</body>
 </html>
